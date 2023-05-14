@@ -38,7 +38,11 @@ class Deck:
         self._topDeck=[]
         self._bottomDeck=[]
         self._shuffledDeck=[]
-        self.shuffle()
+        self._newTopDeck=[]
+        self._newBottomDeck=[]
+        self.firstShuffle()
+        print(self._shuffledDeck)
+        self.repeatShuffle()
         print(self._shuffledDeck)
 
     def populate(self):
@@ -54,11 +58,28 @@ class Deck:
         self._topDeck=[Card(s,n) for s in tSuits for n in tNumbers]
         self._bottomDeck=[Card(s,n) for s in bSuits for n in bNumbers]
 
-    def shuffle(self):
+    def firstShuffle(self):
         self.splitDeck()
         for i in range(len(self._topDeck)):
             self._shuffledDeck.append(self._topDeck[i])
             self._shuffledDeck.append(self._bottomDeck[i])
+
+    def repeatShuffle(self):
+
+        # I want to take the first half of the list "_self.shuffledDeck" and split it so the top half goes into "self._newTopDeck" and the
+        # bottom half goes into "self._newBottomDeck"
+
+        
+
+
+        for i in range(len(self._shuffledDeck)):
+            self._topDeck.append(self._shuffledDeck[i])
+            self._bottomDeck.append(self._shuffledDeck[i])
+       
+        for i in range(len(self._topDeck)):
+            self._shuffledDeck.append(self._topDeck[i])
+            self._shuffledDeck.append(self._bottomDeck[i])
+
 
         # # Cards[]
         # self._topDeck=[Card(s,n) for s in tSuits for n in tNumbers]
