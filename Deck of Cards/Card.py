@@ -58,7 +58,5 @@ class Deck:
         self.splitDeck()
         
         
-        
-    
 my_split_deck=Deck()
 print(my_split_deck)
