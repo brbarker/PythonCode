@@ -55,15 +55,29 @@ class Deck:
         self._bottomDeck=[Card(s,n) for s in bSuits for n in bNumbers]
 
     def shuffle(self):
-        tSuits=["hearts","clubs"]
-        tNumbers=["A"]+[str(n) for n in range(2,11)]+["J","Q","K"]
-        bSuits=["diamonds","spades"]
-        bNumbers=["K","Q","J","10","9","8","7","6","5","4","3","2","A"]
-        self._topDeck=[Card(s,n) for s in tSuits for n in tNumbers]
-        self._bottomDeck=[Card(s,n) for s in bSuits for n in bNumbers]
-        self._shuffledDeck=[Card(i,j) for i in self._topDeck for j in self._bottomDeck]
+        self.splitDeck()
+        for i in range(len(self._topDeck)):
+            self._shuffledDeck.append(self._topDeck[i])
+            self._shuffledDeck.append(self._bottomDeck[i])
 
-        
+        # # Cards[]
+        # self._topDeck=[Card(s,n) for s in tSuits for n in tNumbers]
+        # # Cards[]
+        # self._bottomDeck=[Card(s,n) for s in bSuits for n in bNumbers]
+        # # i = Card j = Card
+        # for i 26 
+        #  for j 26
+        # 
+        #
+        # for i in _topDeck.length
+        #   _shuffledDeck.append(_topDeck[i])
+        #   _shuffledDeck.append(_bottomDeck[i])
+        # 
+        #         
+        # self._shuffledDeck=[Card(i,j) for i in self._topDeck for j in self._bottomDeck]
+
+
+
 
         
         
