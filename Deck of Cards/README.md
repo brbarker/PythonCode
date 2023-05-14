@@ -10,3 +10,7 @@ Things to define:
   
   Starting Order: All suits grouped together in this order --> (Hearts, Clubs, Diamonds, Spades). Hearts and Clubs are ordered (Ace through King). Diamonds and Spades are ordered (King through Ace).
 
+  Top Deck: Hearts and Clubs
+
+  Bottom Deck: Diamonds and Spades
+
