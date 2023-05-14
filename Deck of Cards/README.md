@@ -13,4 +13,9 @@ Things to define:
   Top Deck: Hearts and Clubs
 
   Bottom Deck: Diamonds and Spades
+  
+  
+  # Cardless Approach
+  
+  This approach was inspired by Bill Chapman while discussing a coding approach to this problem. Simply put, why deal with cards and objects when all I really need is just a list from 1-52?
 
