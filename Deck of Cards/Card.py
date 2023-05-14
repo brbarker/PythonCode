@@ -37,9 +37,9 @@ class Deck:
         self._cards = []
         self._topDeck=[]
         self._bottomDeck=[]
-        self.splitDeck()
-        print("Top Deck =",self._topDeck)
-        print("Bottom Deck =", self._bottomDeck)
+        self._shuffledDeck=[]
+        self.shuffle()
+        print(self._shuffledDeck)
 
     def populate(self):
         suits=["hearts","clubs","diamonds",'spades']
@@ -55,9 +55,17 @@ class Deck:
         self._bottomDeck=[Card(s,n) for s in bSuits for n in bNumbers]
 
     def shuffle(self):
-        self.splitDeck()
+        tSuits=["hearts","clubs"]
+        tNumbers=["A"]+[str(n) for n in range(2,11)]+["J","Q","K"]
+        bSuits=["diamonds","spades"]
+        bNumbers=["K","Q","J","10","9","8","7","6","5","4","3","2","A"]
+        self._topDeck=[Card(s,n) for s in tSuits for n in tNumbers]
+        self._bottomDeck=[Card(s,n) for s in bSuits for n in bNumbers]
+        self._shuffledDeck=[Card(i,j) for i in self._topDeck for j in self._bottomDeck]
+
+        
+
         
         
-        
-my_split_deck=Deck()
-print(my_split_deck)
+my_shuffled_deck=Deck()
+print(my_shuffled_deck)
