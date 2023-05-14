@@ -6,7 +6,7 @@ My goal is to explore object oriented programming and to explore a problem that 
 
 Things to define:
 
-  A Perfect Shuffle: Splitting a deck exactly in half and using a Riffle Shuffle where exactly one card from each half-deck goes down at a time, in order --> (R1,L1,R2,L2,R3,L3)
+  A Perfect Shuffle: Splitting a deck exactly in half and using a Riffle Shuffle where exactly one card from each half-deck goes down at a time, in order --> (L1,R1,L2,R2,L3,R3)
   
   Starting Order: All suits grouped together in this order --> (Hearts, Clubs, Diamonds, Spades). Hearts and Clubs are ordered (Ace through King). Diamonds and Spades are ordered (King through Ace).
 
