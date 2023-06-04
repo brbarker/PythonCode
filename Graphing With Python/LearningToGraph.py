@@ -47,4 +47,4 @@ print(model)
 
 # showing the plot
 plt.show()
-
+#plt.show()
