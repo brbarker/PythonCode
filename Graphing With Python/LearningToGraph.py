@@ -42,7 +42,7 @@ plt.title('A Graph')
 # giving the graph a legend
 plt.legend()
 
-#prints the coefficients for each term of the fit polynomial
+# prints the coefficients for each term of the fit polynomial
 print(model)
 
 # showing the plot
