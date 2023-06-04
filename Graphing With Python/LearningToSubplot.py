@@ -24,7 +24,7 @@ y2=rints2*scale_value
 y3=rints3*scale_value
 y4=rints4*scale_value
 
-# style selection
+# style selection - the different styles can be found online
 plt.style.use('ggplot')
 
 # make a figure container to hold the subplots
