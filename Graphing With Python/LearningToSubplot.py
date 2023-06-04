@@ -16,7 +16,7 @@ x4=np.arange(0,10,0.1)
 
 # define a scale value since rng.random only goes from 0 -> 1
 # --scaling it to 10 will map .2 to 2, .5 to 5, etc-- 
-scale_value = 5
+scale_value = 10
 
 # y-axis values for all four graphs
 y1=rints1*scale_value
