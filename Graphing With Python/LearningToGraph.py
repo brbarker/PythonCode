@@ -13,7 +13,7 @@ x2=np.arange(0,10,0.1)
 scale_value = 10
 
 # y-axis values
-y1=rints*scale_value
+y1=np.e**x1
 
 #test prints
 print(len(x1))
