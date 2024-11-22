@@ -1,1 +1,1 @@
-
+This interactive noise simulation is designed to illustrate the effect of noise on the modulation depth of a signal. There are sliders to adjust the noise level and there are titles to display the calculated modulation depth of the clean and noisy signal.
