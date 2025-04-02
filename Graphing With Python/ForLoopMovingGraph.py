@@ -11,8 +11,6 @@ for i in np.arange(0,50,0.5):
     xdata.append(i)
     ydata.append(np.random.choice(100))
 
-    
-
     # define the limits for the graph
     plt.xlim(-1,51)
     plt.ylim(-1,101)
@@ -23,7 +21,7 @@ for i in np.arange(0,50,0.5):
     plt.grid(True)
 
     # make a title for the graph
-    plt.title('A Living Graph')
+    plt.title('Animated Graph')
 
     #pause between points to give the effect of animation
     plt.pause(0.05)

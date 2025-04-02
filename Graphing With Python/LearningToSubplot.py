@@ -33,24 +33,24 @@ fig=plt.figure()
 # define the subplots and where they go in the figure
 # add_subplot(nrows,ncols,plot_number)
 # plot_number reads left -> right, top -> bottom
-plt1=fig.add_subplot(221)
-plt2=fig.add_subplot(222)
-plt3=fig.add_subplot(223)
-plt4=fig.add_subplot(224)
+plt1=fig.add_subplot(2,2,1)
+plt2=fig.add_subplot(2,2,2)
+plt3=fig.add_subplot(2,2,3)
+plt4=fig.add_subplot(2,2,4)
 
 # plot each of the subplots
 # colors: r=red, b=blue, g=green, k=black
 plt1.plot(x1,y1,color='r')
-plt1.set_title('Plot 1 (221)')
+plt1.set_title('Plot 1')
 
 plt2.plot(x2,y2,color='b')
-plt2.set_title('Plot 2 (222)')
+plt2.set_title('Plot 2')
 
 plt3.plot(x3,y3,color='g')
-plt3.set_title('Plot 3 (223)')
+plt3.set_title('Plot 3')
 
 plt4.plot(x4,y4,color='k')
-plt4.set_title('Plot 4 (224)')
+plt4.set_title('Plot 4')
 
 # adjust space between subplot
 fig.subplots_adjust(hspace=.5,wspace=.5)
